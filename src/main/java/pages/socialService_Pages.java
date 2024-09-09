@@ -97,8 +97,8 @@ public class socialService_Pages extends StartupPage {
 
 	/**@Test6
 	 * about this method selectIndiaFromCountryDropdownAndVerifySelection() 
-	 * @param : get the data from JSON file as type Map<String, String> expectedData
-	 * @description : it will select the country as per JSON expected data
+	 * @param : get the data from Excel file as type Map<String, String> expectedData
+	 * @description : it will select the country as per Excel expected data
 	 * @return : String
 	 * @author : YAKSHA
 	 */
@@ -133,8 +133,8 @@ public class socialService_Pages extends StartupPage {
 
 	/**@Test9
 	 * about this method verifyTextboxIsPresentBySelectingYesFromHasTargetGroupCertificateDropdown() 
-	 * @param : get the data from JSON file as type Map<String, String> expectedData
-	 * @description : it will select the country as per JSON expected data
+	 * @param : get the data from Excel file as type Map<String, String> expectedData
+	 * @description : it will select the country as per Excel expected data
 	 * @return : String
 	 * @author : YAKSHA
 	 */
