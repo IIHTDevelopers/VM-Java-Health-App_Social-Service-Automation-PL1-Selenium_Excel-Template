@@ -229,54 +229,5 @@ public class socialService_Pages extends StartupPage {
 		return false;
 	}
 
-	/**@Test13
-	 * about this method verifyLocatorsName() 
-	 * @param : Map<String, String>
-	 * @description : get the place holder name of address text filed and verify  the place holder name.
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String verifyLocatorsName(Map<String, String> expectedData) throws Exception {
-		
-		return null;
-	}
-
-	/**@Test14
-	 * about this method getDataFromTable() 
-	 * @param : null
-	 * @description : it will fetch the data from the table
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public String getDataFromTable() throws Exception {
-		
-
-		return null;
-	}
-
-	/**@Test15
-	 * about this method verifyRadioButton() 
-	 * @param : null
-	 * @description :
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public Boolean verifyRadioButton() throws Exception {
-		
-		return false;
-	}
-
-	/**@Test16
-	 * about this method verifyCheckbox() 
-	 * @param : null
-	 * @description :
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public Boolean verifyCheckbox() throws Exception {
-
-		return false;
-	}
-
 	
 }
