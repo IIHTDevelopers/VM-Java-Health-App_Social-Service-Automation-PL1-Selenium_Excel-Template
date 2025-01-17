@@ -180,54 +180,7 @@ public class socialService_Pages extends StartupPage {
 		return null;
 	}
 
-	/**@Test9
-	 * about this method verifyTextboxIsPresentBySelectingYesFromHasTargetGroupCertificateDropdown() 
-	 * @param : get the data from Excel file as type Map<String, String> expectedData
-	 * @description : it will select the country as per Excel expected data
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String verifyTextboxIsPresentBySelectingYesFromHasTargetGroupCertificateDropdown(Map<String, String> expectedData) throws Exception {
 
-		return null;
-	}
-
-	/**@Test10
-	 * about this method getPlaceHolderNameVerifyPlaceHolderNameOfAddress() 
-	 * @param : Map<String, String>
-	 * @description : get the place holder name of address textfiled and verify  the place holder name.
-	 * @return : String
-	 * @author : Yaksha
-	 */
-	public String getPlaceHolderNameVerifyPlaceHolderNameOfAddress(Map<String, String> expectedData) throws Exception {
-		
-		return null;
-		
-	}
-
-	/**@Test11
-	 * about this method closeNewSSUPatientRegistrationPopupByUsingJsExecutor() 
-	 * @param : null
-	 * @description : Close this "New SSU Patient Registration" popup by using javaScript.
-	 * @return : Boolean
-	 * @author : Yaksha
-	 */
-	public Boolean closeNewSSUPatientRegistrationPopupByUsingJsExecutor() throws Exception {
-		
-		return false;
-	}
-
-	/**@Test12
-	 * about this method closeNewSSUPatientRegistrationPopupByUsingJsExecutor() 
-	 * @param : null
-	 * @description : Close this "New SSU Patient Registration" popup by using javaScript.
-	 * @return : Boolean
-	 * @author : Yaksha
-	 */
-	public Boolean performNavigateBackNavigateRefreshNavigateForwordAction() throws Exception {
-		
-		return false;
-	}
 
 	
 }
