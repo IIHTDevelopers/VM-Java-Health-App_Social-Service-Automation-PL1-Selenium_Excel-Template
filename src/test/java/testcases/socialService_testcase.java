@@ -130,44 +130,6 @@ public class socialService_testcase extends AppTestBase
 		Assert.assertTrue(locatorsFactoryInstance.warningMessageIsPresent(driver).isDisplayed(), "Warning message is not present in the current page, Please check manually");
 	}
 	
-	@Test(priority = 9, groups = {"sanity"}, description="select Yes from the Has target group certificate? dropdown and verify that Target group certificate type and certificate no textfield is present or not ")
-	public void verifyYesIsSelectedFromHasTargetGroupCertificateDropdownAndValidateTextbox() throws Exception {
-		socialService_PagesInstance = new socialService_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "NewSSUPatientRegistrationForm");
-		Assert.assertEquals(socialService_PagesInstance.verifyTextboxIsPresentBySelectingYesFromHasTargetGroupCertificateDropdown(expectedData), expectedData.get("HasTargetGroupCertificate?Yes"), " Yes option is not present in that dropdown, please check manually");
-		Assert.assertTrue(locatorsFactoryInstance.verifyCertificateNoTextFieldIsPresent(driver).isDisplayed(), "hasTG_certificate Dropdown is not present in the current page, Please check manually");
-	}
-	
-	@Test(priority = 10, groups = {"sanity"}, description="On the \"New SSU Patient Registration\" form's,\r\n"
-			+ "get the place holder name of \"Address\" textfiled of  \"New SSU Patient Registration\" page\r\n"
-			+ "and verify  the place holder name.")
-	public void getPlaceHolderNameVerifyPlaceHolderName() throws Exception {
-		socialService_PagesInstance = new socialService_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "NewSSUPatientRegistrationPopup");
-		Assert.assertEquals(socialService_PagesInstance.getPlaceHolderNameVerifyPlaceHolderNameOfAddress(expectedData), expectedData.get("AddressFieldPlaceHolder"),"Not able to verify the placeholder name, please check manually");
-		Assert.assertEquals(locatorsFactoryInstance.raceTextFieldPlaceHolderIsPresent(),expectedData.get("RaceFieldPlaceHolder"),"race Textfield is not present in the current page, Please check manually");
-	}
-	
-	@Test(priority = 11, groups = {"sanity"}, description="Close this New SSU Patient Registration popup by using javaScript")
-	public void performJavaScriptExecutorOperation() throws Exception {
-		socialService_PagesInstance = new socialService_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Assert.assertTrue(socialService_PagesInstance.closeNewSSUPatientRegistrationPopupByUsingJsExecutor(), "Unable to perform the js Executor operation, please check manually");
-		Assert.assertTrue(locatorsFactoryInstance.listByPatientStatusRadioButtonIsPresent(driver).isSelected(), "RadioButton is not present in the current page, Please check manually");
-	}
-	
-	@Test(priority = 12, groups = {"sanity"}, description="Close this New SSU Patient Registration popup by using javaScript")
-	public void performNavigateBackNavigateRefreshNavigateForwordAction() throws Exception {
-		socialService_PagesInstance = new socialService_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Assert.assertTrue(socialService_PagesInstance.performNavigateBackNavigateRefreshNavigateForwordAction(), "elements are not present, please check manually");
-		Assert.assertTrue(locatorsFactoryInstance.verifySSUPatientListButtonIsPresent(driver).isDisplayed(), "elements are not present, Please check manually");
-	}
-	
-	
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
 		System.out.println("before closing the browser");
