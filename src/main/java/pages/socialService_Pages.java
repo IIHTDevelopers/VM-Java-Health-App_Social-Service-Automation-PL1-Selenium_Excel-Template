@@ -144,19 +144,8 @@ public class socialService_Pages extends StartupPage {
 		return null;
 	}
 
+
 	/**@Test6
-	 * about this method selectIndiaFromCountryDropdownAndVerifySelection() 
-	 * @param : get the data from Excel file as type Map<String, String> expectedData
-	 * @description : it will select the country as per Excel expected data
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String selectIndiaFromCountryDropdownAndVerifySelection(Map<String, String> expectedData) throws Exception {
-
-		return null;	
-	}
-
-	/**@Test7
 	 * about this method scrollToButtomOfThePageAndVerifyCloseButtonIsPresent() 
 	 * @param : null
 	 * @description : scroll to the bottom of the page and verify that "Close" button is present or not.
@@ -168,7 +157,7 @@ public class socialService_Pages extends StartupPage {
 		return false;
 	}
 
-	/**@Test8
+	/**@Test7
 	 * about this method validateWarnningMessageOfNewSSUPatientRegistrationForms() 
 	 * @param : Map<String, String>
 	 * @description : Validate the warnning message for the membership dropdown.
@@ -177,6 +166,18 @@ public class socialService_Pages extends StartupPage {
 	 */
 	public String validateWarnningMessageOfNewSSUPatientRegistrationForms(Map<String, String> expectedData) throws Exception {
 		
+		return null;
+	}
+	
+	/**@Test8
+	 * about this method verifyTextboxIsPresentBySelectingYesFromHasTargetGroupCertificateDropdown() 
+	 * @param : get the data from Excel file as type Map<String, String> expectedData
+	 * @description : it will select the country as per Excel expected data
+	 * @return : String
+	 * @author : YAKSHA
+	 */
+	public String verifyTextboxIsPresentBySelectingYesFromHasTargetGroupCertificateDropdown(Map<String, String> expectedData) throws Exception {
+
 		return null;
 	}
 
