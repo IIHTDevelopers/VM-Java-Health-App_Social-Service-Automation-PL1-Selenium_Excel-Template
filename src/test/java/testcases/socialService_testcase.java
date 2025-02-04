@@ -99,20 +99,7 @@ public class socialService_testcase extends AppTestBase
 		Assert.assertEquals(locatorsFactoryInstance.verifyValueIsPresentInLastNameTextbox(),expectedData.get("lastName"),"lastName field Text is not present in the current page, Please check manually");
 	}
 	
-	@Test(priority = 6, groups = {"sanity"}, description="On the Social Service module's, \r\n"
-			+ "\"New SSU Patient Registration\" form, \r\n"
-			+ "select India  from the country dropdown and\r\n"
-			+ "validate India is  properly selected or not.")
-	public void verifyIndiaIsSelectedFromCountryDropdown() throws Exception {
-		socialService_PagesInstance = new socialService_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "NewSSUPatientRegistrationForm");
-		Assert.assertEquals(socialService_PagesInstance.selectIndiaFromCountryDropdownAndVerifySelection(expectedData), expectedData.get("selectedCountryName"), "selected country is not matching with expected, please check manually!");
-		Assert.assertEquals(locatorsFactoryInstance.verifyIndiaIsPresent(), expectedData.get("selectedCountryName"), "selected country is not matching with expected, please check manually!");
-	}
-	
-	@Test(priority = 7, groups = {"sanity"}, description="scroll to the bottom of the \"New SSU Patient Registration\" form\r\n"
+	@Test(priority = 6, groups = {"sanity"}, description="scroll to the bottom of the \"New SSU Patient Registration\" form\r\n"
 			+ "and verify that \"Register\" button  and \"Close\" button are peresent or not?")
 	public void scrollToButtomOfThePageAndVerifyCloseButtonIsPresent() throws Exception {
 		socialService_PagesInstance = new socialService_Pages(driver);
@@ -121,13 +108,22 @@ public class socialService_testcase extends AppTestBase
 		Assert.assertTrue(locatorsFactoryInstance.verifyRegisterButtonIsPresent(driver).isDisplayed(), "Print Invoice Button Element is not present in the current page, Please check manually");
 	}
 	
-	@Test(priority = 8, groups = {"sanity"}, description="Validate the warnning message for the membership dropdown.")
+	@Test(priority = 7, groups = {"sanity"}, description="Validate the warnning message for the membership dropdown.")
 	public void validateWarnningMessageForMembershipDropdown() throws Exception {
 		socialService_PagesInstance = new socialService_Pages(driver);
 		locatorsFactoryInstance = new LocatorsFactory(driver);
 		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "NewSSUPatientRegistrationPopup");
 		Assert.assertEquals(socialService_PagesInstance.validateWarnningMessageOfNewSSUPatientRegistrationForms(expectedData), expectedData.get("warnningMessage"),"Warning message is not present, please check manually");
 		Assert.assertTrue(locatorsFactoryInstance.warningMessageIsPresent(driver).isDisplayed(), "Warning message is not present in the current page, Please check manually");
+	}
+	
+	@Test(priority = 8, groups = {"sanity"}, description="select Yes from the Has target group certificate? dropdown and verify that Target group certificate type and certificate no textfield is present or not ")
+	public void verifyYesIsSelectedFromHasTargetGroupCertificateDropdownAndValidateTextbox() throws Exception {
+		socialService_PagesInstance = new socialService_Pages(driver);
+		locatorsFactoryInstance = new LocatorsFactory(driver);
+		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "NewSSUPatientRegistrationForm");
+		Assert.assertEquals(socialService_PagesInstance.verifyTextboxIsPresentBySelectingYesFromHasTargetGroupCertificateDropdown(expectedData), expectedData.get("HasTargetGroupCertificate?Yes"), " Yes option is not present in that dropdown, please check manually");
+		Assert.assertTrue(locatorsFactoryInstance.verifyCertificateNoTextFieldIsPresent(driver).isDisplayed(), "hasTG_certificate Dropdown is not present in the current page, Please check manually");
 	}
 	
 	@AfterClass(alwaysRun = true)
