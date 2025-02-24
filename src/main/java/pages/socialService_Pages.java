@@ -8,61 +8,40 @@ import org.openqa.selenium.WebElement;
 
 public class socialService_Pages extends StartupPage {
 	
-	By usernameTextfield=By.id(" ");
-	By usernameTextbox = By.xpath(" ");
-	By passwordTextbox = By.xpath(" ");
-	By signInButton = By.xpath(" ");
-	By registeredPatientTextElement = By.xpath(" ");	
-	By totalDoctorsTextElement = By.xpath(" ");	
-	By todaysAppointmentTextElement = By.xpath(" ");	
-	By socialServiceModule = By.xpath(" ");	
-	By registerNewSSUPatientButton = By.xpath(" ");	
-	By searchBar = By.id(" ");
-	By newSSUpatientRegistrationPopup= By.xpath(" ");
-	By firstNameTextField = By.id(" ");
-	By middelNameTextField = By.id(" ");
-	By lastNameTextField = By.id(" ");
-	By ageTextField = By.id(" ");
-	By phoneNumberTextField = By.id(" ");
-	By phoneNumberTextFieldErrorMessage = By.xpath(" ");
-	By countryDropdown = By.id(" ");
-	By countryDropdownMenuElement = By.xpath(" ");
-	By selectIndiaIncountryDropdown = By.xpath(" ");
-	By warningMessage = By.xpath(" ");
-	By hasTG_certificateDropdown = By.id(" ");
-	By selectYesFromhasTG_certificateDropdown = By.xpath(" ");
-	By addressTextField = By.id(" ");
-	By patientInformationBar = By.xpath(" ");
-	By patientInformationText = By.xpath(" ");	
-	By ssuInformationBar = By.xpath(" ");
-	By targetGroupDropdown = By.id(" ");
-	By registerButton = By.id(" ");
-	By newSSUPatientRegistrationFormNameElement = By.xpath(" ");
-	By registrationButtonOfNewSSUPatientRegistrationForms = By.xpath(" ");
-	By errorMeesageInLastNameTextFieldElement = By.xpath(" ");
-	By registerButtonOfNewSSUPatientRegistrationForms = By.xpath(" ");
-	By targetGroupCertificateTypeTextbox = By.xpath(" ");
-	By certificateNoTextbox = By.xpath(" ");
-	By ssuPatientListButtonByElement = By.xpath(" ");
-	By subCategoryTabByElement = By.xpath(" ");
-	By cuttonSubCategoryNameByElement = By.xpath(" ");
-	By itemSubmenuByElement = By.xpath(" ");
-	By addItemButtonByElement = By.xpath(" ");
-	By generalInventoryRadioButtonByElement = By.xpath(" ");
-	By commonRadioButtonByElement = By.xpath(" ");
-	By inactiveRadioButton = By.xpath(" ");
-	By activeRadioButton = By.xpath(" ");
-	By addItemPageNameByElement = By.xpath(" ");
-	By isCssdApplicableCheckBoxByElement = By.xpath(" ");
-	By isColdStorageApplicableCheckBoxByElement = By.xpath(" ");
-	By isPatConsumptionApplicableCheckBoxByElement = By.xpath(" ");
+//	TC1-Locators
+	By usernameTextbox = null;
+	By passwordTextbox = null;
+	By signInButton = null;
+	By registeredPatientTextElement = null;	
+//	TC2-Locators
+	By socialServiceModule = null;	
+//	TC3-Locators
+	By registerNewSSUPatientButton = null;
+	By newSSUPatientRegistrationFormNameElement = null;
+//	TC4-Locators
+	By registrationButtonOfNewSSUPatientRegistrationForms = null;
+	By errorMeesageInLastNameTextFieldElement = null;
+//	TC5-Locators
+	By firstNameTextField = null;
+	By middelNameTextField = null;
+	By lastNameTextField = null;
+//	TC6-Locators
+	By registerButtonOfNewSSUPatientRegistrationForms = null;
+	By closeButtonOfNewSsuPatientRegistrationByElement = null;
+//	TC7-Locators
+	By SSUInformationWarningMessage = null;	
+//	TC8-Locators
+	By hasTG_certificateDropdown = null;
+	By selectYesFromhasTG_certificateDropdown = null;
+	By targetGroupCertificateTypeTextbox = null;
+	By certificateNoTextbox = null;
 
 	String pageName = this.getClass().getSimpleName();
 	public socialService_Pages(WebDriver driver) {
 		super(driver);
 	}
 
-	/**@Test1
+	/**@Test1.1
 	 * about this method loginTohealthAppByGivenValidCredetial() 
 	 * @param : Map<String, String>
 	 * @description : fill usernameTextbox & passwordTextbox and click on sign in button
