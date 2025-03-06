@@ -12,9 +12,9 @@ public class socialService_Pages extends StartupPage {
 	By usernameTextbox = null;
 	By passwordTextbox = null;
 	By signInButton = null;
-	By registeredPatientTextElement = null;	
+	By registeredPatientTextElement = null;
 //	TC2-Locators
-	By socialServiceModule = null;	
+	By socialServiceModule = null;
 //	TC3-Locators
 	By registerNewSSUPatientButton = null;
 	By newSSUPatientRegistrationFormNameElement = null;
@@ -29,7 +29,7 @@ public class socialService_Pages extends StartupPage {
 	By registerButtonOfNewSSUPatientRegistrationForms = null;
 	By closeButtonOfNewSsuPatientRegistrationByElement = null;
 //	TC7-Locators
-	By SSUInformationWarningMessage = null;	
+	By SSUInformationWarningMessage = null;
 //	TC8-Locators
 	By hasTG_certificateDropdown = null;
 	By selectYesFromhasTG_certificateDropdown = null;
@@ -61,7 +61,7 @@ public class socialService_Pages extends StartupPage {
 	 * @author : YAKSHA
 	 */
 	public String verifyTitleOfThePage() throws Exception {
-			
+
 		return null;
 	}
 
@@ -118,7 +118,7 @@ public class socialService_Pages extends StartupPage {
 	 * @return : String
 	 * @author : YAKSHA
 	 */
-	public String fillDataInTextfieldsAndVerifyEnteredData(Map<String, String> expectedData) throws Exception {
+	public String fillDataInTextfieldsAndVerifyEnteredDataInFirstName(Map<String, String> expectedData) throws Exception {
 		
 		return null;
 	}
@@ -131,7 +131,7 @@ public class socialService_Pages extends StartupPage {
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
-	public Boolean scrollToButtomOfThePageAndVerifyCloseButtonIsPresent() throws Exception {
+	public Boolean scrollToButtomOfThePageAndVerifyRegisterAndCloseButtonIsPresent() throws Exception {
 		
 		return false;
 	}
@@ -143,7 +143,7 @@ public class socialService_Pages extends StartupPage {
 	 * @return : String
 	 * @author : YAKSHA
 	 */
-	public String validateWarnningMessageOfNewSSUPatientRegistrationForms(Map<String, String> expectedData) throws Exception {
+	public String validateWarnningMessageOfSSUInformationSection(Map<String, String> expectedData) throws Exception {
 		
 		return null;
 	}
