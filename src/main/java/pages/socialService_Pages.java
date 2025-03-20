@@ -28,13 +28,6 @@ public class socialService_Pages extends StartupPage {
 //	TC6-Locators
 	By registerButtonOfNewSSUPatientRegistrationForms = null;
 	By closeButtonOfNewSsuPatientRegistrationByElement = null;
-//	TC7-Locators
-	By SSUInformationWarningMessage = null;
-//	TC8-Locators
-	By hasTG_certificateDropdown = null;
-	By selectYesFromhasTG_certificateDropdown = null;
-	By targetGroupCertificateTypeTextbox = null;
-	By certificateNoTextbox = null;
 
 	String pageName = this.getClass().getSimpleName();
 	public socialService_Pages(WebDriver driver) {
@@ -136,29 +129,7 @@ public class socialService_Pages extends StartupPage {
 		return false;
 	}
 
-	/**@Test7
-	 * about this method validateWarnningMessageOfNewSSUPatientRegistrationForms() 
-	 * @param : Map<String, String>
-	 * @description : Validate the warnning message for the membership dropdown.
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String validateWarnningMessageOfSSUInformationSection(Map<String, String> expectedData) throws Exception {
-		
-		return null;
-	}
 	
-	/**@Test8
-	 * about this method verifyTextboxIsPresentBySelectingYesFromHasTargetGroupCertificateDropdown() 
-	 * @param : get the data from Excel file as type Map<String, String> expectedData
-	 * @description : it will select the country as per Excel expected data
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String verifyTextboxIsPresentBySelectingYesFromHasTargetGroupCertificateDropdown(Map<String, String> expectedData) throws Exception {
-
-		return null;
-	}
 
 
 
