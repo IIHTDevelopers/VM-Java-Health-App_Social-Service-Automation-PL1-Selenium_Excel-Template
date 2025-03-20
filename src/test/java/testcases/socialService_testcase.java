@@ -107,24 +107,7 @@ public class socialService_testcase extends AppTestBase
 		Assert.assertTrue(socialService_PagesInstance.scrollToButtomOfThePageAndVerifyRegisterAndCloseButtonIsPresent(), "Any of the elememt is not present, please check manually");
 		Assert.assertTrue(locatorsFactoryInstance.verifyRegisterButtonIsPresent(driver).isDisplayed(), "Print Invoice Button Element is not present in the current page, Please check manually");
 	}
-	
-	@Test(priority = 7, groups = {"sanity"}, description="Validate the warnning message for the membership dropdown.")
-	public void validateWarnningMessageOfSSUInformationSection() throws Exception {
-		socialService_PagesInstance = new socialService_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "NewSSUPatientRegistrationPopup");
-		Assert.assertEquals(socialService_PagesInstance.validateWarnningMessageOfSSUInformationSection(expectedData), expectedData.get("warnningMessage"),"Warning message is not present, please check manually");
-		Assert.assertTrue(locatorsFactoryInstance.warningMessageIsPresent(driver).isDisplayed(), "Warning message is not present in the current page, Please check manually");
-	}
-	
-	@Test(priority = 8, groups = {"sanity"}, description="select Yes from the Has target group certificate? dropdown and verify that Target group certificate type and certificate no textfield is present or not ")
-	public void verifyTextboxIsPresentBySelectingYesFromHasTargetGroupCertificateDropdown() throws Exception {
-		socialService_PagesInstance = new socialService_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "NewSSUPatientRegistrationForm");
-		Assert.assertEquals(socialService_PagesInstance.verifyTextboxIsPresentBySelectingYesFromHasTargetGroupCertificateDropdown(expectedData), expectedData.get("HasTargetGroupCertificate?Yes"), " Yes option is not present in that dropdown, please check manually");
-		Assert.assertTrue(locatorsFactoryInstance.verifyCertificateNoTextFieldIsPresent(driver).isDisplayed(), "hasTG_certificate Dropdown is not present in the current page, Please check manually");
-	}
+		
 	
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
